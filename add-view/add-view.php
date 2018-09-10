@@ -3,7 +3,7 @@
 <?php include '../menu.php' ?>
 
 <div class="container">
-	<form action="crud/create.php" method="post">
+	<form action="../../crud/create.php" method="post">
 		<div class="form-group">
 			<label for="title">Task title</label>
 			<input type="text" name="title" class="form-control" id="title" placeholder="Enter title">

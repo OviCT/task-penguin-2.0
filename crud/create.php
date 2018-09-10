@@ -1,8 +1,9 @@
 <?php
-
+    echo "aba";
     include_once '../connection/connect.php';
 
     if(isset($_POST['submit'])){
+
         $title1 = $_POST['title'];
         $content1 = $_POST['content'];
 
@@ -16,5 +17,5 @@
             echo "Error: " . $conn->error;
         }
         
-        header('Location: /');
     }
+    header('Location: /');
