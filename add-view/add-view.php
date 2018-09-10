@@ -1,6 +1,6 @@
 
-<?php include 'style/import-style.php' ?>
-<?php include 'menu.php' ?>
+<?php include '../style/import-style.php' ?>
+<?php include '../menu.php' ?>
 
 <div class="container">
 	<form action="crud/create.php" method="post">
