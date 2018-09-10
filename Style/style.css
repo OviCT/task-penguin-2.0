@@ -1,0 +1,18 @@
+.logo-image {
+	float: center;
+}
+
+.container {
+	margin: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.sticky {
+	display: block;
+	position: sticky;
+	top: 0;
+}
