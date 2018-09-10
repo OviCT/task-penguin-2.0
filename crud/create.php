@@ -1,13 +1,20 @@
 <?php
 
-    include_once '../connection/connect.php'
+    include_once '../connection/connect.php';
 
-    $name = $_POST['Task_Name'];
-    $description = $_POST['Description'];
-   /// $deadline =  $_POST['Deadline'];
+    if(isset($_POST['submit'])){
+        $title1 = $_POST['title'];
+        $content1 = $_POST['content'];
 
-    $sql = 'INSERT INTO task(Task_Name, Description/*, Deadline*/) VALUES($name, $description/*, $deadline*/)';
+        $sql = "INSERT INTO task(title, content) VALUES('$title1', '$content1')";
 
-    if(mysqli_querry($connection, $sql) == FALSE){
-        echo "Error: " . $connection ->error;  
+
+        if(mysqli_query($conn, $sql) == TRUE){
+        echo "No errors";
+        }
+        else {
+            echo "Error: " . $conn->error;
+        }
+        
+        header('Location: /');
     }

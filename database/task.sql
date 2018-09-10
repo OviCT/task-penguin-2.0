@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 10, 2018 at 07:33 PM
+-- Generation Time: Sep 10, 2018 at 09:14 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -29,11 +29,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `task` (
-  `ID` int(255) NOT NULL,
-  `Task_Name` varchar(255) NOT NULL,
-  `Description` text NOT NULL,
-  `Deadline` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-  `Created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `id` int(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `date` date NOT NULL DEFAULT '0000-00-00',
+  `time` time NOT NULL,
+  `createdat` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -44,7 +45,7 @@ CREATE TABLE `task` (
 -- Indexes for table `task`
 --
 ALTER TABLE `task`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -54,7 +55,7 @@ ALTER TABLE `task`
 -- AUTO_INCREMENT for table `task`
 --
 ALTER TABLE `task`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

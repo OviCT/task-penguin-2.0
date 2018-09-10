@@ -5,8 +5,8 @@
     $password = '';
     $database = 'db-penguin';
 
-    $connection = mysqli_connect($servername, $username, $password, $database);
+    $conn = mysqli_connect($servername, $username, $password, $database);
 
-    if($connection -> error){
-        echo "Error: " . $connection -> error;
+    if ($conn->error) {
+        echo "Error: " . $conn->error;
     }

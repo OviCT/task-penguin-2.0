@@ -13,6 +13,6 @@
 			<textarea class="form-control" name="content" id="description" aria-describedby="emailHelp" placeholder="Describe the task"></textarea>
 		</div>
 
-	<button type="submit" class="btn btn-primary">Submit</button>
+	<button type="submit" name="submit" class="btn btn-primary">Submit</button>
 	</form>
 </div>
