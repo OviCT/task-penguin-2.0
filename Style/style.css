@@ -12,3 +12,10 @@
 	position: sticky;
 	top: 0;
 }
+.form-container {
+	margin: 10px auto;
+	color: white;
+	border-radius: 5px;
+	padding: 6px;
+}
+
