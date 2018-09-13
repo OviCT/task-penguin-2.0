@@ -15,5 +15,9 @@
 		</div>
 
 	<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+
+	<div class="bg-warning warning-box">
+			All of the fields above are required.
+	</div>
 	</form>
 </div>

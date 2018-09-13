@@ -16,6 +16,15 @@
 	margin: 10px auto;
 	color: white;
 	border-radius: 5px;
-	padding: 6px;
+	padding: 6px 20px;
 }
+.warning-box {
+	padding: 15px 5px;
+	border-left: 10px solid red;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: black;
+	font-weight: bold;
+	width: 60%;
 
+}
