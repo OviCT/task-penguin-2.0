@@ -1,5 +1,4 @@
 <?php
-    echo "aba";
     include_once '../connection/connect.php';
 
     if(isset($_POST['submit'])){
@@ -11,11 +10,11 @@
 
 
         if(mysqli_query($conn, $sql) == TRUE){
-        echo "No errors";
+            echo "No errors";
         }
         else {
             echo "Error: " . $conn->error;
         }
         
     }
-    header('Location: /');
+    header ("Location: /");
